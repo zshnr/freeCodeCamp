@@ -1,10 +1,7 @@
 function factorialize(num) {
-  var arrayOfNumbers = [];
-  while (num > 0) {
-    var previousNumber = num--;
-    arrayOfNumbers.push(previousNumber);
+  var factor = 1;
+  for (i = factor; i <= num; i++) {
+     factor *= i; 
   }
-  return arrayOfNumbers.reduce(function(previousValue, currentValue){
-    return previousValue * currentValue;
-  });
+  return factor;
 }
